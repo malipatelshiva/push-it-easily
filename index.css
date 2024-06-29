@@ -1,0 +1,85 @@
+/* Reset and basic styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+  }
+  
+  /* Navigation */
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  .nav-container-div {
+    display: flex;
+    align-items: center;
+  }
+  
+  #ajio-nav-logo {
+    height: 40px;
+  }
+  
+  #nav-categories-container > div {
+    margin-right: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  #nav-search-div {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  /* Carousel */
+  .carousel {
+    margin-bottom: 20px;
+  }
+  
+  /* Treanding grid */
+  #treanding-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  #treanding-grid img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .nav-container {
+      flex-wrap: wrap;
+    }
+  
+    .nav-container-div {
+      margin-bottom: 10px;
+    }
+  
+    #nav-categories-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    #nav-categories-container > div {
+      margin-right: 10px;
+    }
+  
+    #treanding-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
